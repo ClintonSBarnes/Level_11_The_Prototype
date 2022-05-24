@@ -4,7 +4,7 @@
 int userNumber = -2;
 int userGuess = -1;
 
-//validates the User 1 input to confirm it is in the correct range.
+//validates the User 1 input to confirm it is in the correct range. Clears screen when input has been verified allowable.
 while ((userNumber > 100 || userNumber < 0))
 {
     Console.WriteLine("User 1, enter a number between 0 and 100. ");
@@ -13,6 +13,7 @@ while ((userNumber > 100 || userNumber < 0))
     {
         Console.WriteLine("You have entered an invalid number");
     }
+    Console.Clear();
 }
 
 //Tests User 2's input against the User 1 input. Loops while they are not the same. 
